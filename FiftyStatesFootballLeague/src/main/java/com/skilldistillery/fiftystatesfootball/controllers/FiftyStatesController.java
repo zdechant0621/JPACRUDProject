@@ -61,7 +61,7 @@ public class FiftyStatesController {
 	public String showUpdateForm(@RequestParam("teamId") int teamId, @RequestParam("name") String name, @RequestParam("capitalCity") String capitalCity,
 			@RequestParam("stadiumName") String stadiumName, @RequestParam("yearAdmitted") int yearAdmitted,
 			@RequestParam("headCoachName") String headCoachName, Model model) {
-		FiftyStatesFootball updatedTeam = new FiftyStatesFootball(name, capitalCity, stadiumName, yearAdmitted,
+		FiftyStatesFootball updatedTeam = new FiftyStatesFootball(teamId, name, capitalCity, stadiumName, yearAdmitted,
 				headCoachName);
 		fsfDAO.update(teamId, updatedTeam);
 		model.addAttribute("teams", fsfDAO.findAll());

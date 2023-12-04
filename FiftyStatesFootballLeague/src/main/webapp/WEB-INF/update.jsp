@@ -10,7 +10,6 @@
 <body>
 	<h1>Update Team</h1>
     <form action="/updateTeam.do" method="GET">
-        <label for="name">Name:</label>
         <input type="text" id="name" name="name" required><br><br>
         
         <label for="capitalCity">Capital City:</label>

@@ -42,6 +42,19 @@ public class FiftyStatesFootball {
 		this.headCoachName = headCoachName;
 	}
 
+	
+
+	public FiftyStatesFootball(int id, String name, String capitalCity, String stadiumName, int yearAdmitted,
+			String headCoachName) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.capitalCity = capitalCity;
+		this.stadiumName = stadiumName;
+		this.yearAdmitted = yearAdmitted;
+		this.headCoachName = headCoachName;
+	}
+
 	public int getId() {
 		return id;
 	}

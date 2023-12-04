@@ -45,7 +45,7 @@ public class FiftyStatesFootballDAOImpl implements FiftyStatesFootballDAO {
 	public FiftyStatesFootball update(int footballId, FiftyStatesFootball team) {
 		FiftyStatesFootball teamFound = em.find(FiftyStatesFootball.class, footballId);
 		if (teamFound != null) {
-			teamFound.setId(teamFound.getId());
+			teamFound.setId(teamFound.getId());;
 			teamFound.setName(teamFound.getName());
 			teamFound.setCapitalCity(teamFound.getCapitalCity());
 			teamFound.setStadiumName(teamFound.getStadiumName());
